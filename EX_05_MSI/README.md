@@ -19,11 +19,11 @@ This repository provides resources for understanding and calculating common spec
 
 ---
 
-## ? Spectral Indices Explained
+## Spectral Indices Explained
 
 Spectral indices are combinations of spectral reflectance values from two or more wavelength bands that highlight specific phenomena on the Earth's surface, such as vegetation, water, or built-up areas.
 
-### ?? 1. NDWI (Normalized Difference Water Index)
+### 1. NDWI (Normalized Difference Water Index)
 
 The NDWI is used to delineate open water features.
 
@@ -49,7 +49,7 @@ $$
 
 ---
 
-### ?? 2. MNDWI (Modified Normalized Difference Water Index)
+### 2. MNDWI (Modified Normalized Difference Water Index)
 
 The MNDWI enhances the delineation of open water features while suppressing built-up land noise.
 
@@ -83,7 +83,7 @@ $$
 
 ---
 
-### ?? 3. NDVI (Normalized Difference Vegetation Index)
+### 3. NDVI (Normalized Difference Vegetation Index)
 
 The NDVI is a widely used index to quantify vegetation greenness and health.
 
@@ -110,7 +110,7 @@ $$
 
 ---
 
-## ?? Illustrative Example: Index Calculation & Analysis
+## Illustrative Example: Index Calculation & Analysis
 
 This example uses hypothetical pixel values, representative of bands from a sensor like Sentinel-2, to demonstrate index interpretation.
 
@@ -124,19 +124,19 @@ This example uses hypothetical pixel values, representative of bands from a sens
 **Calculations:**
 
 * **NDWI:**
-    $$
-    \text{NDWI} = \frac{1 - 9}{1 + 9} = \frac{-8}{10} = \mathbf{-0.8}
-    $$
+    
+    $\text{NDWI} = \frac{1 - 9}{1 + 9} = \frac{-8}{10} = \mathbf{-0.8}$
+    
 
 * **MNDWI:**
-    $$
-    \text{MNDWI} = \frac{1 - 12}{1 + 12} = \frac{-11}{13} \approx \mathbf{-0.846}
-    $$
+    
+    $\text{MNDWI} = \frac{1 - 12}{1 + 12} = \frac{-11}{13} \approx \mathbf{-0.846}$
+    
 
 * **NDVI:**
-    $$
-    \text{NDVI} = \frac{9 - 9}{9 + 9} = \frac{0}{18} = \mathbf{0}
-    $$
+    
+    $\text{NDVI} = \frac{9 - 9}{9 + 9} = \frac{0}{18} = \mathbf{0}$
+    
 
 **Analysis:**
 
@@ -148,9 +148,9 @@ This example uses hypothetical pixel values, representative of bands from a sens
 
 ---
 
-## ??? Google Earth Engine Implementation
+## Google Earth Engine Implementation
 
-The provided Python script (`your_script_name.py`) demonstrates how to calculate NDWI, MNDWI, and NDVI using Landsat 8 imagery within Google Earth Engine and visualize the results.
+The provided Python script (`Google-Earth-Engine_Landsat.ipynb`) demonstrates how to calculate NDWI, MNDWI, and NDVI using Landsat 8 imagery within Google Earth Engine and visualize the results.
 
 ### Overview
 
@@ -192,9 +192,3 @@ The script performs the following actions:
         ee.Initialize(project='your-gee-project-id') # Replace with your GEE project ID
     ```
     **Important:** Replace `'gen-lang-client-0219770664'` in the script with your own Google Earth Engine Project ID.
-
-### Running the Script
-
-Execute the Python script from your terminal:
-```bash
-python your_script_name.py
